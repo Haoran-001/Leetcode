@@ -5,7 +5,7 @@ import java.util.*;
 public class LongestNiceSubstring {
     public static void main(String[] args) {
         LongestNiceSubstring longestNiceSubstring = new LongestNiceSubstring();
-        System.out.println(longestNiceSubstring.longestNiceSubstring("YazaAay"));
+        System.out.println(longestNiceSubstring.longestNiceSubstring2("c"));
     }
 
     public String longestNiceSubstring(String s) {
@@ -47,5 +47,42 @@ public class LongestNiceSubstring {
         }
 
         return true;
+    }
+
+    public void helper(char[] charArray, int left, int right) {
+        if (left > right) {
+            return;
+        }
+
+        Set<Character> set = new HashSet<>();
+        for (int i = left; i <= right; i++) {
+            set.add(charArray[i]);
+        }
+
+        for (int i = left; i <= right; i++) {
+            char c = charArray[i];
+            if (Character.isUpperCase(c) && !set.contains(Character.toLowerCase(c)) || Character.isLowerCase(c) && !set.contains(Character.toUpperCase(c))) {
+                charArray[i] = '0';
+                helper(charArray, left, i - 1);
+                helper(charArray, i + 1, right);
+            }
+        }
+    }
+
+    private String longestNiceSubstring2(String s) {
+        char[] sCharArray = s.toCharArray();
+        helper(sCharArray, 0, sCharArray.length - 1);
+
+        String res = "";
+        String tempString = String.valueOf(sCharArray);
+        String[] tempStringArray = tempString.split("0");
+
+        for (String str : tempStringArray) {
+            if (str.length() > res.length()) {
+                res = str;
+            }
+        }
+
+        return res;
     }
 }
