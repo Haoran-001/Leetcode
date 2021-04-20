@@ -5,7 +5,7 @@ import java.util.*;
 public class SecondHighest {
     public static void main(String[] args) {
         SecondHighest secondHighest = new SecondHighest();
-        var s = "dfa12321afd";
+        String s = "dfa12321afd";
         int ans = secondHighest.secondHighest(s);
         System.out.println(ans);
     }

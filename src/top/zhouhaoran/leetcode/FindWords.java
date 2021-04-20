@@ -11,19 +11,19 @@ public class FindWords {
 
     public String[] findWords(String[] words) {
         // qwertyuiop
-        Set<Character> set1 = new HashSet<>(){{
+        Set<Character> set1 = new HashSet(){{
             add('q'); add('w'); add('e'); add('r'); add('t'); add('y'); add('u'); add('i'); add('o'); add('p');
         }};
         // asdfghjkl
-        Set<Character> set2 = new HashSet<>(){{
+        Set<Character> set2 = new HashSet(){{
             add('a'); add('s'); add('d'); add('f'); add('g'); add('h'); add('j'); add('k'); add('l');
         }};
         // zxcvbnm
-        Set<Character> set3 = new HashSet<>(){{
+        Set<Character> set3 = new HashSet(){{
             add('z'); add('x'); add('c'); add('v'); add('b'); add('n'); add('m');
         }};
 
-        List<String> list = new ArrayList<>();
+        List<String> list = new ArrayList();
 
         for (int i = 0; i < words.length; i++) {
             if (canFindOneWord(words[i], set1)) {

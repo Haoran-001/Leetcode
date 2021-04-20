@@ -5,7 +5,7 @@ import java.util.*;
 public class DistributeCandies {
     public static void main(String[] args) {
         DistributeCandies distributeCandies = new DistributeCandies();
-        var ans = distributeCandies.distributeCandies3(new int[]{1, 1, 2, 3});
+        int ans = distributeCandies.distributeCandies3(new int[]{1, 1, 2, 3});
         System.out.println(ans);
         System.out.println(Integer.MIN_VALUE + "~" + Integer.MAX_VALUE);
         System.out.println(Long.MIN_VALUE + "~" + Long.MAX_VALUE);

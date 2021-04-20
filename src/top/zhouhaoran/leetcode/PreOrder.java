@@ -11,10 +11,10 @@ public class PreOrder {
         Node node4 = new Node(4);
         Node node5 = new Node(5);
         Node node6 = new Node(6);
-        node1.children = new LinkedList<>(){{
+        node1.children = new LinkedList(){{
             add(node2);add(node3);add(node4);
         }};
-        node2.children = new LinkedList<>(){{
+        node2.children = new LinkedList(){{
             add(node5);add(node6);
         }};
         System.out.println(preorder.preorder2(node1));

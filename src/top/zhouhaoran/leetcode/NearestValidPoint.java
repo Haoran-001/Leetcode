@@ -4,7 +4,7 @@ public class NearestValidPoint {
     public static void main(String[] args) {
         NearestValidPoint nearestValidPoint = new NearestValidPoint();
         int x = 3, y = 4;
-        var points = new int[][]{{1, 2}, {3, 1}, {2, 4}, {2, 3}, {4, 4}};
+        int[][] points = new int[][]{{1, 2}, {3, 1}, {2, 4}, {2, 3}, {4, 4}};
         System.out.println(nearestValidPoint.nearestValidPoint(x, y, points));
     }
 

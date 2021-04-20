@@ -19,7 +19,7 @@ public class ReformatDate {
     }
 
     private String getMonth(String month) {
-        Map<String, String> monthMap = new HashMap<>() {{
+        Map<String, String> monthMap = new HashMap() {{
             put("Jan", "01");put("Feb", "02");put("Mar", "03");put("Apr", "04");put("May", "05");put("Jun", "06");
             put("Jul", "07");put("Aug", "08");put("Sep", "09");put("Oct", "10");put("Nov", "11");put("Dec", "12");
         }};
@@ -28,7 +28,7 @@ public class ReformatDate {
     }
 
     private String getDay(String day) {
-        Map<String, String> dayMap = new HashMap<>() {{
+        Map<String, String> dayMap = new HashMap() {{
             put("1st", "01");put("2nd", "02");put("3rd", "03");put("4th", "04");put("5th", "05");put("6th", "06");
             put("7th", "07");put("8th", "08");put("9th", "09");put("10th", "10");put("11th", "11");put("12th", "12");
             put("13th", "13");put("14th", "14");put("15th", "15");put("16th", "16");put("17th", "17");put("18th", "18");

@@ -1,7 +1,5 @@
 package top.zhouhaoran.leetcode;
 
-import com.sun.source.tree.Tree;
-
 import java.util.*;
 
 public class LevelOrder {

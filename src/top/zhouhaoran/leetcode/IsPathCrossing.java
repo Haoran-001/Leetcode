@@ -15,7 +15,7 @@ public class IsPathCrossing {
     public boolean isPathCrossing(String path) {
         Set<Point> set = new HashSet<>();
         char[] pathArray = path.toCharArray();
-        Map<Character, int[]> directions = new HashMap<>() {{
+        Map<Character, int[]> directions = new HashMap() {{
             put('N', new int[]{-1, 0}); put('S', new int[]{1, 0});
             put('E', new int[]{0, 1}); put('W', new int[]{0, -1});
         }};
@@ -39,7 +39,7 @@ public class IsPathCrossing {
     public boolean isPathCrossing2(String path) {
         Set<List<Integer>> set = new HashSet<>();
         char[] pathArray = path.toCharArray();
-        Map<Character, int[]> directions = new HashMap<>() {{
+        Map<Character, int[]> directions = new HashMap() {{
             put('N', new int[]{-1, 0}); put('S', new int[]{1, 0});
             put('E', new int[]{0, 1}); put('W', new int[]{0, -1});
         }};

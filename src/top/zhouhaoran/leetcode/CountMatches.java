@@ -5,12 +5,12 @@ import java.util.*;
 public class CountMatches {
     public static void main(String[] args) {
         CountMatches countMatches = new CountMatches();
-        List<List<String>> items = new ArrayList<>() {{
-           add(new ArrayList<>(){{add("phone"); add("blue"); add("pixel");}});
-           add(new ArrayList<>(){{add("computer"); add("silver"); add("lenovo");}});
-           add(new ArrayList<>(){{add("phone"); add("gold"); add("iphone");}});
-        }};
-        System.out.println(countMatches.countMatches(items, "color", "silver"));
+//        List<List<String>> items = new ArrayList<>() {{
+//           add(new ArrayList<>(){{add("phone"); add("blue"); add("pixel");}});
+//           add(new ArrayList<>(){{add("computer"); add("silver"); add("lenovo");}});
+//           add(new ArrayList<>(){{add("phone"); add("gold"); add("iphone");}});
+//        }};
+//        System.out.println(countMatches.countMatches(items, "color", "silver"));
 
     }
 

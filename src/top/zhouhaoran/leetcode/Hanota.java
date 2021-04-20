@@ -5,7 +5,7 @@ import java.util.*;
 public class Hanota {
     public static void main(String[] args) {
         Hanota hanota = new Hanota();
-        List<Integer> A = new ArrayList<>(){{
+        List<Integer> A = new ArrayList(){{
            add(2); add(1); add(0);
         }};
         List<Integer> B = new ArrayList<>();
